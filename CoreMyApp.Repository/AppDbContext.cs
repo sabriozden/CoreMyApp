@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CoreMyApp.Repository
 {
-    public class MyDbContext : DbContext
+    public class AppDbContext : DbContext
     {
         //public MyDbContext(DbContextOptions options) : base(options)
         //{
