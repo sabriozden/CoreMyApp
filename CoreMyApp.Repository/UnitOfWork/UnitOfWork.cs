@@ -7,7 +7,7 @@ using CoreMyApp.Repository.Base;
 
 namespace CoreMyApp.Repository.UnitOfWork
 {
-    public class UnitOfWork
+    public class UnitOfWork : IUnitOfWork
     {
         private readonly AppDbContext _dbContext;
         private Dictionary<Type, dynamic> _repositories;
@@ -30,9 +30,16 @@ namespace CoreMyApp.Repository.UnitOfWork
             return _repositories[type];
         }
 
-        public void SaveChanges()
+        public int SaveChanges()
         {
-            _dbContext.SaveChanges();
+            return _dbContext.SaveChanges();
         }
+    }
+
+    public interface IUnitOfWork
+    {
+        TRepository Repository<TRepository>() where TRepository : IRepository;
+
+        int SaveChanges();
     }
 }
