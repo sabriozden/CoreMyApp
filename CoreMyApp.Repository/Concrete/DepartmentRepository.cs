@@ -10,5 +10,9 @@ namespace CoreMyApp.Repository.Concrete
             : base(dbContext)
         {
         }
+
+        public void Test()
+        {
+        }
     }
 }

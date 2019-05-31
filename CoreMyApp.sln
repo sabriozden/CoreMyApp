@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreMyApp.WebUI", "CoreMyApp.WebUI\CoreMyApp.WebUI.csproj", "{8654BEA6-AAA1-4302-BD3F-E031D4296C61}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreMyApp.WebUI", "CoreMyApp.WebUI\CoreMyApp.WebUI.csproj", "{8654BEA6-AAA1-4302-BD3F-E031D4296C61}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreMyApp.Entities", "CoreMyApp.Entities\CoreMyApp.Entities.csproj", "{CB3A913E-951A-4EDF-B2F7-CC9EF2E36DAE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreMyApp.Entities", "CoreMyApp.Entities\CoreMyApp.Entities.csproj", "{CB3A913E-951A-4EDF-B2F7-CC9EF2E36DAE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreMyApp.DataAccess", "CoreMyApp.DataAccess\CoreMyApp.DataAccess.csproj", "{B445CFBF-A6CE-4A6B-BB5E-06764F26B7E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreMyApp.DataAccess", "CoreMyApp.DataAccess\CoreMyApp.DataAccess.csproj", "{B445CFBF-A6CE-4A6B-BB5E-06764F26B7E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreMyApp.Business", "CoreMyApp.Business\CoreMyApp.Business.csproj", "{148C4ABC-ABA0-4E61-BEEB-1C00ACC2E074}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreMyApp.Business", "CoreMyApp.Business\CoreMyApp.Business.csproj", "{148C4ABC-ABA0-4E61-BEEB-1C00ACC2E074}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreMyApp.Repository", "CoreMyApp.Repository\CoreMyApp.Repository.csproj", "{D088F991-1295-41A4-B6CC-2E4FEAC67A78}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreMyApp.Repository", "CoreMyApp.Repository\CoreMyApp.Repository.csproj", "{D088F991-1295-41A4-B6CC-2E4FEAC67A78}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

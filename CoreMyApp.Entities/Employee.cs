@@ -2,7 +2,7 @@
 
 namespace CoreMyApp.Entities
 {
-    public class Employee : AuditableEntity<int>, ISoftDelete
+    public class Employee : AuditableEntity<long>, ISoftDelete
     {
         public string Name { get; set; }
 
