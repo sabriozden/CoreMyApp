@@ -6,7 +6,11 @@ using System.Linq.Expressions;
 
 namespace CoreMyApp.Repository.Base
 {
-    public interface IRepository<TEntity> where TEntity : BaseEntity
+    public interface IRepository
+    {
+    }
+
+    public interface IRepository<TEntity> : IRepository where TEntity : BaseEntity
     {
         IQueryable<TEntity> FindAll();
 

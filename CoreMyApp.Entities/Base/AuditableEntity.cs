@@ -15,7 +15,7 @@ namespace CoreMyApp.Entities.Base
         public string CreatedBy { get; set; }
 
         [ScaffoldColumn(false)]
-        public DateTime UpdatedDate { get; set; }
+        public DateTime? UpdatedDate { get; set; }
 
         [MaxLength(256)]
         [ScaffoldColumn(false)]
