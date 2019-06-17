@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Text;
-using CoreMyApp.Business.Dto;
+﻿using System.Collections.Generic;
+using App.Core.Dto.Base;
 
-namespace CoreMyApp.Business.Base
+namespace App.Core.Business.Base
 {
     public interface IService
     {

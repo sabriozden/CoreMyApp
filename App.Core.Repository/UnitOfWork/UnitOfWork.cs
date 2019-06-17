@@ -1,24 +1,21 @@
 ﻿using System;
-using System.Collections.Concurrent;
 using System.Collections.Generic;
-using System.Text;
-using CoreMyApp.Entities.Base;
-using CoreMyApp.Repository.Base;
+using App.Core.Repository.Base;
+using App.Core.Repository.DataContext;
 
-namespace CoreMyApp.Repository.UnitOfWork
+namespace App.Core.Repository.UnitOfWork
 {
     public class UnitOfWork : IUnitOfWork
     {
-        private readonly AppDbContext _dbContext;
+        private readonly BaseDatabaseContext _dbContext;
         private Dictionary<Type, dynamic> _repositories;
 
-        public UnitOfWork(AppDbContext dbContext)
+        public UnitOfWork(BaseDatabaseContext dbContext)
         {
             _dbContext = dbContext;
         }
 
-        //public TRepository Repository<TRepository, TEntity>() where TRepository : Repository<TEntity>
-        //    where TEntity : BaseEntity
+        
         public TRepository Repository<TRepository>() where TRepository : IRepository
         {
             if (_repositories == null)

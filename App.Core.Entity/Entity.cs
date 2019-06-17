@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace CoreMyApp.Entities.Base
+namespace App.Core.Entity
 {
     public abstract class Entity<TKey> : BaseEntity, IEntity<TKey>
     {

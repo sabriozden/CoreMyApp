@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CoreMyApp.Entities.Base
+namespace App.Core.Entity
 {
     public interface ISoftDelete
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CoreMyApp.Business.Dto
+namespace App.Core.Dto.Base
 {
     public abstract class BaseDto
     {

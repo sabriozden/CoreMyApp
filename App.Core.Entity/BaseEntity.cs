@@ -1,4 +1,4 @@
-﻿namespace CoreMyApp.Entities.Base
+﻿namespace App.Core.Entity
 {
     public abstract class BaseEntity
     {

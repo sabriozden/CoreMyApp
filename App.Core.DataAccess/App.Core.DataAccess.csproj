@@ -5,8 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\App.Core.Dto\App.Core.Dto.csproj" />
-    <ProjectReference Include="..\CoreMyApp.Repository\CoreMyApp.Repository.csproj" />
+    <ProjectReference Include="..\App.Core.Entity\App.Core.Entity.csproj" />
+    <ProjectReference Include="..\App.Core.Repository\App.Core.Repository.csproj" />
   </ItemGroup>
 
 </Project>

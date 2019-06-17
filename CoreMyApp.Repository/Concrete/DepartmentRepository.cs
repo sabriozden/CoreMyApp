@@ -1,6 +1,6 @@
-﻿using CoreMyApp.Entities;
+﻿using App.Core.Repository.Base;
+using CoreMyApp.Entities;
 using CoreMyApp.Repository.Abstract;
-using CoreMyApp.Repository.Base;
 
 namespace CoreMyApp.Repository.Concrete
 {

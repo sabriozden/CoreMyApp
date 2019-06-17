@@ -1,5 +1,5 @@
+using App.Core.Repository.UnitOfWork;
 using CoreMyApp.Repository;
-using CoreMyApp.Repository.UnitOfWork;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace CoreMyApp.Test
@@ -10,7 +10,7 @@ namespace CoreMyApp.Test
         [TestMethod]
         public void TestMethod1()
         {
-            UnitOfWork uow = new UnitOfWork(new AppDbContext());
+            IUnitOfWork uow = new UnitOfWork(new AppDbContext());
 
         }
     }

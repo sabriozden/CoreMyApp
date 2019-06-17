@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CoreMyApp.Entities.Base
+namespace App.Core.Entity
 {
     public interface IAuditableEntity
     {

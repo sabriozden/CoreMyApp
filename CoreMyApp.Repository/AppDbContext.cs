@@ -1,10 +1,10 @@
-﻿using System;
+﻿using App.Core.Repository.DataContext;
 using CoreMyApp.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace CoreMyApp.Repository
 {
-    public class AppDbContext : DbContext
+    public class AppDbContext : BaseDatabaseContext
     {
         //public MyDbContext(DbContextOptions options) : base(options)
         //{

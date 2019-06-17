@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CoreMyApp.Repository.Base
+namespace App.Core.Repository.Base
 {
     public abstract class BaseRepository
     {

@@ -1,16 +1,18 @@
-﻿using CoreMyApp.Business.Dto;
-using CoreMyApp.Repository.UnitOfWork;
+﻿
 using System;
 using System.Collections.Generic;
-using CoreMyApp.Entities.Base;
-using CoreMyApp.Repository.Base;
+using App.Core.Dto.Base;
+using App.Core.Entity;
+using App.Core.Repository.UnitOfWork;
 
-namespace CoreMyApp.Business.Base
+
+namespace App.Core.Business.Base
 {
-    public abstract class Service<TRepository, TEntity, TDto> : IService<TDto>
+    public abstract class Service<TDataAccess, TEntity, TDto> : IService<TDto>
+        where TEntity: BaseEntity
         where TDto : BaseDto
-        where TRepository : IRepository<TEntity>
-        where TEntity : BaseEntity
+
+       
     {
         protected readonly IUnitOfWork UnitOfWork;
 
@@ -21,8 +23,9 @@ namespace CoreMyApp.Business.Base
 
         public TDto Create(TDto dto)
         {
+            //TODO: Mapper uygulanacak.
             //TODO: implementasyonu tamamlanacak.
-            var t = UnitOfWork.Repository<TRepository>().Create(default(TEntity));
+           
             return default(TDto);
         }
 

@@ -1,10 +1,9 @@
-﻿using CoreMyApp.Entities.Base;
-using Microsoft.EntityFrameworkCore.ChangeTracking;
+﻿using App.Core.Entity;
 using System;
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace CoreMyApp.Repository.Base
+namespace App.Core.Repository.Base
 {
     public interface IRepository
     {
@@ -16,7 +15,7 @@ namespace CoreMyApp.Repository.Base
 
         IQueryable<TEntity> FindByCondition(Expression<Func<TEntity, bool>> expression);
 
-        EntityEntry<TEntity> Create(TEntity entity);
+        TEntity Add(TEntity entity);
 
         void Update(TEntity entity);
 

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace CoreMyApp.Entities.Base
+namespace App.Core.Entity
 {
     public abstract class AuditableEntity<TEntity> : Entity<TEntity>, IAuditableEntity
     {

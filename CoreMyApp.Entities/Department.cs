@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
-using CoreMyApp.Entities.Base;
+using App.Core.Entity;
+
 
 namespace CoreMyApp.Entities
 {
