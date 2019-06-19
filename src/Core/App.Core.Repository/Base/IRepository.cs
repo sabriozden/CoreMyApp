@@ -11,9 +11,9 @@ namespace App.Core.Repository.Base
 
     public interface IRepository<TEntity> : IRepository where TEntity : BaseEntity
     {
-        IQueryable<TEntity> FindAll();
+        IQueryable<TEntity> GetAll();
 
-        IQueryable<TEntity> FindByCondition(Expression<Func<TEntity, bool>> expression);
+        IQueryable<TEntity> GetBy(Expression<Func<TEntity, bool>> expression);
 
         TEntity Add(TEntity entity);
 

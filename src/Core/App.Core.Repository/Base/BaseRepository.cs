@@ -1,27 +1,29 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Text;
 using App.Core.Entity;
 using App.Core.Repository.DataContext;
 using Microsoft.EntityFrameworkCore;
 
 namespace App.Core.Repository.Base
 {
-    public abstract class Repository<TEntity> : IRepository<TEntity> where TEntity : BaseEntity
+    public abstract class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : BaseEntity
     {
-        protected BaseDatabaseContext DatabaseContext { get; set; }
+        public BaseDatabaseContext DatabaseContext { get; }
 
-        protected Repository(BaseDatabaseContext databaseContext)
+        protected BaseRepository(BaseDatabaseContext databaseContext)
         {
             DatabaseContext = databaseContext;
         }
 
-        public virtual IQueryable<TEntity> FindAll()
+        public virtual IQueryable<TEntity> GetAll()
         {
             return DatabaseContext.Set<TEntity>().AsNoTracking();
         }
 
-        public virtual IQueryable<TEntity> FindByCondition(Expression<Func<TEntity, bool>> expression)
+        public virtual IQueryable<TEntity> GetBy(Expression<Func<TEntity, bool>> expression)
         {
             return DatabaseContext.Set<TEntity>().Where(expression).AsNoTracking();
         }

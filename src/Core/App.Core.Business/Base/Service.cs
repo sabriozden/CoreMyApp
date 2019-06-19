@@ -8,7 +8,7 @@ using App.Core.Repository.UnitOfWork;
 
 namespace App.Core.Business.Base
 {
-    public abstract class Service<TDataAccess, TEntity, TDto> : IService<TDto>
+    public abstract class Service<TEntity, TDto> : IService<TDto>
         where TEntity: BaseEntity
         where TDto : BaseDto
 

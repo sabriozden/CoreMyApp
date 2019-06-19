@@ -5,7 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\App.Core.Entity\App.Core.Entity.csproj" />
+    <PackageReference Include="FluentValidation" Version="8.4.0" />
+    <PackageReference Include="PostSharp" Version="6.2.7" />
   </ItemGroup>
 
 </Project>

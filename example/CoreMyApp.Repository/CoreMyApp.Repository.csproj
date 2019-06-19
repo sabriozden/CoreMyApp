@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\App.Core.Repository\App.Core.Repository.csproj" />
+    <ProjectReference Include="..\..\src\Core\App.Core.Repository\App.Core.Repository.csproj" />
     <ProjectReference Include="..\CoreMyApp.Entities\CoreMyApp.Entities.csproj" />
   </ItemGroup>
 

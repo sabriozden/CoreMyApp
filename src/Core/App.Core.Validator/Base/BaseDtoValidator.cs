@@ -1,7 +1,7 @@
 ﻿using App.Core.Dto.Base;
 using FluentValidation;
 
-namespace App.Core.Validator
+namespace App.Core.Validator.Base
 {
    
 

@@ -1,7 +1,4 @@
-﻿using System;
-using CoreMyApp.Entities;
-using CoreMyApp.Repository;
-using CoreMyApp.Repository.UnitOfWork;
+﻿
 
 namespace CoreMyApp.DataAccess
 {

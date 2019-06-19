@@ -1,16 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using FluentValidation;
+﻿using FluentValidation;
+using FluentValidation.Results;
 using PostSharp.Aspects;
+using System;
 
-namespace App.Core.Validator
+namespace App.Core.Aspect.Validator
 {
-    public class Validator : OnMethodBoundaryAspect
+    public sealed class EntityValidatorAspect : OnMethodBoundaryAspect
     {
         public Type Type { get; }
 
-        public Validator(Type type)
+        public EntityValidatorAspect(Type type)
         {
             Type = type;
         }
@@ -18,10 +17,12 @@ namespace App.Core.Validator
         public override void OnEntry(MethodExecutionArgs args)
         {
             //TODO:İmplementasyonu tamamalnacak.
-           var validator= Activator.CreateInstance(Type);
-           
-            
-            base.OnEntry(args);
+            var validator = (IValidator)Activator.CreateInstance(Type);
+            var t = args.Arguments.GetArgument(0);
+            var c = t.GetType() == Type;
+
+            ValidationResult validationResult = validator.Validate(t);
+
         }
 
         public override void OnSuccess(MethodExecutionArgs args)

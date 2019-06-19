@@ -5,8 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="8.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\App.Core.Dto\App.Core.Dto.csproj" />
-    <ProjectReference Include="..\CoreMyApp.Repository\CoreMyApp.Repository.csproj" />
+    <ProjectReference Include="..\App.Core.Entity\App.Core.Entity.csproj" />
   </ItemGroup>
 
 </Project>
